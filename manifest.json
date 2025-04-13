@@ -1,0 +1,9 @@
+{
+  "short_name": "saga city",
+  "name": "saga city",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#000000"
+}
