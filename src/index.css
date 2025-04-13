@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.layout {
+    min-height: 100vh;
+    background-color: #000000;
+    font-family: 'Helvetica Neue';
+}
+
+.navContainer {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    min-height: 4em;
+    z-index: 100;
+    top: 2.5vh;
+}
+
+.navPill {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: calc(200px + 20vw);
+    background-color: #222222;
+    border-radius: 20em;
+    box-shadow: 0px 0px 50px black;
+}
+
+nav a {
+    font-size: calc(18px + 1vmin);
+    color: white;
+    font-weight: medium;
+    text-decoration: none;
+    text-shadow: 0px 0px 3px black;
+    user-select: none;
+    &:hover {
+        color: lightgray;
+    }
+}
+nav a.active {
+    text-decoration: underline;
+    text-decoration-color: lightgray;
+}
+
+.title {
+    width: 100vw;
+    height: 100vh;
+    font-size: calc(50px + 5vmin);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    filter: drop-shadow(0px 0px 80px black); /* text-shadow causes Safari pixelation */
+    user-select: none;
+    z-index: 99;
+}
+
+.photos ul {
+    list-style-type: none;
+    padding: calc(10px + 2.5vw);
+    padding-top: 5vh;
+    padding-bottom: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(5px + 1vw);
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.socialsContainer {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 4vh;
+    width: 100vw;
+    z-index: 100;
+}
+
+.socialsPill {
+    gap: calc(5px + 1vw);
+    display: flex;
+    align-items: center;
+    background-color: #222222;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 20em;
+    box-shadow: 0px 0px 30px black;
+}
+
+.content {
+    padding-top: 14vh;
+    padding-bottom: 10vh;
+    padding-left: 14vw;
+    padding-right: 14vw;
+}
+
+.content h1 {
+    font-size: calc(40px + 4vmin);
+    color: white;
+    padding-bottom: 4vh;
+}
+
+.content h2 {
+    font-size: calc(10px + 3vmin);
+    color: white;
+    padding-bottom: 2vh;
+}
+
+.content h3 {
+    font-size: calc(8px + 2vmin);
+    color: lightgrey;
+    padding-bottom: 2vh;
+}
+
+.content p {
+    font-size: calc(10px + 1.5vmin);
+    color: white;
+    padding-bottom: 2vh;
+}
