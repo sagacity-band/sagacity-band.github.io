@@ -170,6 +170,18 @@ nav a.active {
     padding-bottom: 2vh;
 }
 
+.about-us-content {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5vw;
+}
+
+.about-us-content > * {
+    flex: 1 1 450px;
+    min-width: 0;
+}
+
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -180,6 +192,10 @@ nav a.active {
   100% {
     transform: scale(1);
   }
+}
+
+.large-landscape-img {
+    width: calc(300px + 6vw);
 }
 
 hr {
