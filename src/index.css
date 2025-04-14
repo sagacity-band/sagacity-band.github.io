@@ -31,38 +31,60 @@
     width: calc(200px + 20vw);
     background-color: black;
     border-radius: 20em;
-    box-shadow: 0px 0px 30px gray;
+    box-shadow: 0px 0px 30px black;
 }
 
 .home-logo {
     width: 100%;
     height: auto;
     min-width: 250px;
-    max-width: 750px;
+    max-width: 700px;
     display: block;
 }
 
 .home-content {
-    padding-top: calc(100px + 6vh);
+    padding-top: calc(140px + 2vw);
     padding-bottom: 22vh;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: calc(5px + 1vw);
+    gap: calc(20px + 1vh + 1.5vw);
     align-items: center;
     align-content: center;
     justify-content: center;
 }
 
-.home-content h1 {
+.upcoming h1 {
     font-size: calc(30px + 3vmin);
     color: charcoal;
-    padding-bottom: 1vh;
+    text-align:center;
+    padding-bottom: 3vh;
 }
 
-.upcoming li {
+.gig-list li {
     font-size: calc(8px + 2vmin);
     color: charcoal;
+}
+
+.sound-button {
+  width: calc(250px + 8vw);
+  font-size: calc(18px + 1vmin);
+  font-weight: bold;
+  color: charcoal;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-radius: 20em;
+  border-width: 6px;
+  border-color: #4ca764;
+  border-style: solid;
+  background-color: #FF6B18;
+  animation: pulse 3s infinite;
+}
+
+.sound-button:hover {
+  background-color: #FF7B0D;
 }
 
 nav a {
@@ -114,7 +136,7 @@ nav a.active {
     padding-left: 1em;
     padding-right: 1em;
     border-radius: 20em;
-    box-shadow: 0px 0px 20px gray;
+    box-shadow: 0px 0px 30px black;
 }
 
 .content {
@@ -146,4 +168,24 @@ nav a.active {
     font-size: calc(12px + 1.5vmin);
     color: charcoal;
     padding-bottom: 2vh;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+hr {
+  width: 75%;
+  height: 3px;
+  border: none;
+  border-radius: 6px;
+  background: #a88f6d;
 }
