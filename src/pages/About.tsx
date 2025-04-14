@@ -5,8 +5,9 @@ function About() {
   return (
     <div>
       <div className="content">
-          <h1>saga city</h1>
-          <p>WIP. there will be some info here</p>
+          <h1>about us</h1>
+          <h2>Welcome to Saga City</h2>
+          <p>We are a band</p>
       </div>
     </div>
   );

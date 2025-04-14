@@ -5,7 +5,7 @@
 
 .layout {
     min-height: 100vh;
-    background-color: #000000;
+    background-color: #EFDAB5;
     font-family: 'Helvetica Neue';
 }
 
@@ -29,9 +29,29 @@
     padding-left: 1em;
     padding-right: 1em;
     width: calc(200px + 20vw);
-    background-color: #222222;
+    background-color: black;
     border-radius: 20em;
-    box-shadow: 0px 0px 50px black;
+    box-shadow: 0px 0px 30px gray;
+}
+
+.home-logo {
+    width: 100%;
+    height: auto;
+    min-width: 200px;
+    max-width: 800px;
+    display: block;
+}
+
+.home-content {
+    padding-top: calc(50px + 1vh);
+    padding-bottom: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: calc(5px + 1vw);
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 
 nav a {
@@ -54,7 +74,7 @@ nav a.active {
     width: 100vw;
     height: 100vh;
     font-size: calc(50px + 5vmin);
-    color: white;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,19 +82,6 @@ nav a.active {
     filter: drop-shadow(0px 0px 80px black); /* text-shadow causes Safari pixelation */
     user-select: none;
     z-index: 99;
-}
-
-.photos ul {
-    list-style-type: none;
-    padding: calc(10px + 2.5vw);
-    padding-top: 5vh;
-    padding-bottom: 15vh;
-    display: flex;
-    flex-wrap: wrap;
-    gap: calc(5px + 1vw);
-    align-items: center;
-    align-content: center;
-    justify-content: center;
 }
 
 .socialsContainer {
@@ -90,13 +97,13 @@ nav a.active {
     gap: calc(5px + 1vw);
     display: flex;
     align-items: center;
-    background-color: #222222;
+    background-color: black;
     padding-top: 1em;
     padding-bottom: 1em;
     padding-left: 1em;
     padding-right: 1em;
     border-radius: 20em;
-    box-shadow: 0px 0px 30px black;
+    box-shadow: 0px 0px 20px gray;
 }
 
 .content {
@@ -108,24 +115,24 @@ nav a.active {
 
 .content h1 {
     font-size: calc(40px + 4vmin);
-    color: white;
+    color: charcoal;
     padding-bottom: 4vh;
 }
 
 .content h2 {
     font-size: calc(10px + 3vmin);
-    color: white;
+    color: charcoal;
     padding-bottom: 2vh;
 }
 
 .content h3 {
     font-size: calc(8px + 2vmin);
-    color: lightgrey;
+    color: charcoal;
     padding-bottom: 2vh;
 }
 
 .content p {
-    font-size: calc(10px + 1.5vmin);
-    color: white;
+    font-size: calc(12px + 1.5vmin);
+    color: charcoal;
     padding-bottom: 2vh;
 }
