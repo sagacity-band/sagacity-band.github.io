@@ -54,7 +54,15 @@ function Home() {
       <div className="upcoming">
         <h1>upcoming</h1>
         <ul className="gig-list">
-          <li>May 25, 2pm: Last Chance, Melbourne</li>
+          <li>
+            <strong>May 25, 2pm</strong>:{' '}
+            <a href="https://www.instagram.com/thelastchancerockandrollbar/?hl=en"
+            target="_blank"
+            rel="noopener noreferrer">
+              Last Chance
+            </a>
+            , Melbourne
+          </li>
         </ul>
       </div>
     </div>
