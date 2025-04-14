@@ -43,7 +43,7 @@
 }
 
 .home-content {
-    padding-top: calc(70px);
+    padding-top: calc(100px + 6vh);
     padding-bottom: 22vh;
     display: flex;
     flex-wrap: wrap;
