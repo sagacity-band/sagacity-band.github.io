@@ -35,7 +35,7 @@
 }
 
 .home-logo {
-    width: 100%;
+    width: 90%;
     height: auto;
     min-width: 250px;
     max-width: 700px;
@@ -167,7 +167,7 @@ nav a.active {
 .content {
     padding-top: 16vh;
     padding-bottom: 20vh;
-    padding-left: 12vw;
+    padding-left: calc(10px + 10vw);
     padding-right: 10vw;
 }
 
@@ -234,4 +234,15 @@ hr {
 
 #shuffle {
     height: calc(18px + 1vmin);
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }

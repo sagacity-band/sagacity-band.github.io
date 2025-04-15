@@ -46,6 +46,7 @@ function Home() {
 
   return (
     <div className="home-content">
+      <h1 className="sr-only">SAGA CITY | Neo-Soul Band in Melbourne/Naarm</h1>
       <img src={logo} className="home-logo" alt="Band logo of Melbourne tram with SAGA CITY graffiti"/>
       <audio
         ref={soundRef}
