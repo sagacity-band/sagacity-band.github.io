@@ -67,6 +67,10 @@
 }
 
 .sound-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: calc(2px + 0.5vw);
   width: calc(250px + 8vw);
   font-size: calc(18px + 1vmin);
   font-weight: bold;
@@ -210,4 +214,8 @@ hr {
     border-radius: 6px;
     background: #a88f6d;
     margin-top: 4vh;
+}
+
+#shuffle {
+    height: calc(18px + 1vmin);
 }

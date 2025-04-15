@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import '../index.css';
 
 import logo from '../images/logo.png';
+import shuffle from '../images/shuffle.png';
 
 const soundFiles = [
   "sounds/quiet-1.mp3",
@@ -49,7 +50,7 @@ function Home() {
         ref={soundRef}
         src={currentSound !== null ? soundFiles[currentSound] : ''}
       />
-      <button onClick={playSound} className="sound-button">GIVE ME A SOUND</button>
+      <button onClick={playSound} className="sound-button">GIVE ME A SOUND<img id="shuffle" src={shuffle}/></button>
       <hr/>
       <div className="upcoming">
         <h1>upcoming</h1>

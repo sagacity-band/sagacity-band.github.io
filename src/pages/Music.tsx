@@ -14,7 +14,7 @@ function Music() {
               rel="noopener noreferrer"
               className="sound-button"
             >
-                CHECK OUT DEMOS
+                FULL LENGTH DEMOS
             </a>
         </div>
     </div>
