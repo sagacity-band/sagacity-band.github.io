@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import '../index.css';
+import GigList from '../components/GigList';
 
 import logo from '../images/logo.png';
 import shuffle from '../images/shuffle.png';
@@ -54,17 +55,7 @@ function Home() {
       <hr/>
       <div className="upcoming">
         <h1>upcoming</h1>
-        <ul className="gig-list">
-          <li>
-            <strong>May 25, 2pm</strong>:{' '}
-            <a href="https://www.instagram.com/thelastchancerockandrollbar/?hl=en"
-            target="_blank"
-            rel="noopener noreferrer">
-              Last Chance
-            </a>
-            , Melbourne
-          </li>
-        </ul>
+        <GigList/>
       </div>
     </div>
   );

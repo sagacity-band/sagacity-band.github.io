@@ -54,6 +54,14 @@
     justify-content: center;
 }
 
+.upcoming {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
 .upcoming h1 {
     font-size: calc(30px + 3vmin);
     color: charcoal;
@@ -62,34 +70,42 @@
 }
 
 .gig-list li {
-    font-size: calc(8px + 2vmin);
+    font-size: calc(11px + 2vmin);
     color: charcoal;
 }
 
+.gig-list a {
+    color: #ff6b18;
+    text-decoration: none;
+    &:hover {
+        color: #ff7b0d;
+    }
+}
+
 .sound-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: calc(2px + 0.5vw);
-  width: calc(250px + 8vw);
-  font-size: calc(18px + 1vmin);
-  font-weight: bold;
-  text-decoration: none;
-  color: inherit;
-  padding-top: 2vh;
-  padding-bottom: 2vh;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  border-radius: 20em;
-  border-width: 6px;
-  border-color: #4ca764;
-  border-style: solid;
-  background-color: #FF6B18;
-  animation: pulse 3s infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: calc(2px + 0.5vw);
+    width: calc(250px + 8vw);
+    font-size: calc(18px + 1vmin);
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border-radius: 20em;
+    border-width: 6px;
+    border-color: #4ca764;
+    border-style: solid;
+    background-color: #ff6b18;
+    animation: pulse 3s infinite;
 }
 
 .sound-button:hover {
-  background-color: #FF7B0D;
+    background-color: #ff7b0d;
 }
 
 #dropboxButton {
@@ -192,15 +208,15 @@ nav a.active {
 }
 
 @keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .large-landscape-img {
