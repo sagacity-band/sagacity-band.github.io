@@ -52,10 +52,13 @@ function Home() {
         ref={soundRef}
         src={currentSound !== null ? soundFiles[currentSound] : ''}
       />
-      <button onClick={playSound} className="sound-button">GIVE ME A SOUND<img id="shuffle" src={shuffle}/></button>
+      <button onClick={playSound} className="sound-button">
+        GIVE ME A SOUND
+        <img id="shuffle" src={shuffle} alt="shuffle icon"/>
+      </button>
       <hr/>
       <div className="upcoming">
-        <h1>upcoming</h1>
+        <h1>upcoming gigs</h1>
         <GigList/>
       </div>
     </div>
