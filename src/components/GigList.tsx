@@ -12,7 +12,7 @@ type Gig = {
 
 const isUpcoming = (dateStr: string): boolean => {
   const today = new Date();
-  const gigDate = new Date(`${dateStr} ${today.getFullYear()}`);
+  const gigDate = new Date(`${dateStr}`);
 
   today.setHours(0, 0, 0, 0);
   gigDate.setHours(0, 0, 0, 0);
