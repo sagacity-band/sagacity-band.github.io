@@ -20,6 +20,20 @@ const isUpcoming = (dateStr: string): boolean => {
   return !isNaN(gigDate.getTime()) && gigDate >= today;
 };
 
+const formatDate = (gig: Gig): string => {
+  const gigDate = new Date(`${gig.date}T${gig.time}`);
+
+  const formattedDate = gigDate.toLocaleString("en-US", {
+    weekday: "short",
+    month: "short",
+    day: "numeric",
+    hour: "numeric",
+    hour12: true
+  }).replace(" PM", "pm").replace(" AM", "am");
+
+  return formattedDate;
+};
+
 const GigList = () => {
   const [gigs, setGigs] = useState<Gig[]>([]);
   const [loading, setLoading] = useState(true);
@@ -48,7 +62,7 @@ const GigList = () => {
     <ul className="gig-list">
       {upcomingGigs.map((gig: Gig, index: number) => (
         <li key={index}>
-          <strong>{gig.date}, {gig.time}</strong>:{' '}
+          <strong>{formatDate(gig)}</strong>:{' '}
           <a href={gig.venueLink}
           target="_blank"
           rel="noopener noreferrer">
