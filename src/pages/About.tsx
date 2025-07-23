@@ -16,7 +16,7 @@ function About() {
               <div>
                 <p><em>sagacity</em> brought you to Saga City, and now it's time to boogie.</p>
                 <p>We are a Naarm based neo-soul group bringing retro pop sounds to the population of our growing metropolis.</p>
-                <p>With a widening setlist of originals sprinkled with some covers, the band are keen to play any type of gig around Melbourne.</p>
+                <p>With a widening setlist of originals sprinkled with some fresh takes of well-known songs, the band is keen to play any type of gig around Melbourne.</p>
                 <p>Welcome to Saga City, population you. Start a chat with us on one of the social pipes below!</p>
               </div>
           </div>

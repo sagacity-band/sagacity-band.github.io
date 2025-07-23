@@ -1,12 +1,11 @@
 import React from 'react';
 import '../index.css';
-import { properties } from '../properties';
 
 function Music() {
   return (
     <div className="content">
         <h1>music</h1>
-        <p>Have a listen to some live recorded demos of our original tunes!</p>
+        <p>Have a listen to some live recorded demos of our original tunes! We are in the process of planning studio recordings, so keep an eye out!</p>
         <iframe
           className="soundcloudFrame"
           title="Saga City band live demos"
